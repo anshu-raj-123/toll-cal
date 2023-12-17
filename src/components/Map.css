@@ -1,0 +1,55 @@
+.map-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    z-index: 2;
+  }
+  
+  button {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .toll-table {
+    margin-top: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Optional: Add some styling to the map */
+  .leaflet-container {
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    z-index: 1;
+  }
+  

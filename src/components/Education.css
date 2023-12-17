@@ -1,0 +1,85 @@
+
+.education-container {
+  z-index: 2;
+  position: relative;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.tooltip .tooltiptext {
+  z-index: 3;
+  visibility: hidden;
+  width: 100%;
+  max-width: 500px;
+  background-color: rgb(139, 202, 223);
+  color: #fff;
+  text-align: left;
+  border-radius: 6px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -50%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltiptext ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.tooltiptext li {
+  margin-bottom: 8px;
+}
+
+.tooltiptext strong {
+  color: #ff4500;
+}
+
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0); 
+  }
+}
+
+.tooltiptext {
+  animation: fadeIn 0.5s ease-in-out;
+
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .education-container {
+      padding: 10px;
+  }
+
+  .tooltiptext {
+      max-width: 100%;
+  }
+}
